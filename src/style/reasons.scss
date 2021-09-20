@@ -1,0 +1,83 @@
+$color-home-background: #F2F5F9;
+$color-green: #6d9c7d;
+$color-deep-blue: #293C5F;
+$color-white: #fff;
+$color-light-blue: #47B2E4;
+$color-theme: #37507E;
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+      @media (max-width: 37.5em) {
+        @content;
+      } //600px
+    }
+    @if $breakpoint == tab-port {
+      @media (max-width: 56.25em) {
+        @content;
+      } //900px
+    }
+    @if $breakpoint == tab-land {
+      @media (max-width: 75em) {
+        @content;
+      } //1200px
+    }
+    @if $breakpoint == big-desktop {
+      @media (min-width: 112.5em) {
+        @content;
+      } //1800px
+    }
+}
+
+input,
+textarea,
+button,
+select,
+a,
+label,
+span,
+div,
+p{
+    -webkit-tap-highlight-color: rgba(0,0,0,0)
+}
+
+.reasons-container{
+    margin: 8rem 0 3rem 0;
+    //background-color: $color-white;
+    padding: 7rem 0rem 5rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.reasons-texts{
+    width: 40%;
+}
+.reason-title{
+    font-family: 'Montserrat';
+    font-size: 3.4rem;
+    line-height: 4rem;
+    color: $color-theme;
+    margin: 0;
+}
+.reasons-illustrator{
+    width: 40%;
+    margin: 0;
+}
+.illustrator-icon{
+    display: block;
+    width: 70rem;
+    height: 55rem;
+    margin: 0 auto;
+
+    transform: scale(1.1)
+}
+.style-us{
+    font-weight: bold;
+}
+.reason-description{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    color: #848484;
+}

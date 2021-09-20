@@ -1,0 +1,44 @@
+$color-white: #fff;
+$color-light-blue: #47B2E4;
+$color-theme: #37507E;
+$color-home-background: #F2F5F9;
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+      @media (max-width: 37.5em) {
+        @content;
+      } //600px
+    }
+    @if $breakpoint == tab-port {
+      @media (max-width: 56.25em) {
+        @content;
+      } //900px
+    }
+    @if $breakpoint == tab-land {
+      @media (max-width: 75em) {
+        @content;
+      } //1200px
+    }
+    @if $breakpoint == big-desktop {
+      @media (min-width: 112.5em) {
+        @content;
+      } //1800px
+    }
+}
+
+.underline-wrapper{
+    position: relative;
+    width: 13rem;
+    background-color: rgba(0,0,0, .1);
+    height: .2rem;
+    margin: 1.5rem auto;
+}
+.center-block{
+    width: 4rem;
+    height: .3rem;
+    background-color: $color-light-blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
