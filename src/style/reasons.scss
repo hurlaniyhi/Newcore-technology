@@ -41,17 +41,31 @@ p{
 }
 
 .reasons-container{
-    margin: 8rem 0 3rem 0;
-    //background-color: $color-white;
-    padding: 7rem 0rem 5rem 0;
+    margin: 4rem 0 3rem 0;
+    padding: 6rem 0rem 5rem 0;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+
+    @media(max-width: 990px){
+        flex-direction: column-reverse;
+    }
 }
 .reasons-texts{
-    width: 40%;
+    width: 44%;
+
+    @media(max-width: 1200px){
+        width: 46%
+    }
+    @media(max-width: 990px){
+        width: 70%;
+    }
+    @media(max-width: 500px){
+        width: 85%;
+    }
+
 }
 .reason-title{
     font-family: 'Montserrat';
@@ -59,18 +73,39 @@ p{
     line-height: 4rem;
     color: $color-theme;
     margin: 0;
+    font-weight: 500;
 }
 .reasons-illustrator{
     width: 40%;
-    margin: 0;
+    margin: 0 0 0 3%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media(max-width: 1200px){
+        width: 47%
+    }
+    @media(max-width: 990px){
+        width: 50%;
+    }
+    @media(max-width: 480px){
+        width: 80%;
+    }
 }
 .illustrator-icon{
     display: block;
-    width: 70rem;
-    height: 55rem;
-    margin: 0 auto;
-
-    transform: scale(1.1)
+    width: 60rem;
+    height: 50rem;
+    //margin: 0 auto;
+    @media(max-width: 1500px){
+        transform: scale(.8);
+     }
+     @media(max-width: 990px){
+        transform: scale(1);
+        height: 30rem;
+        width: 40rem;
+     }
 }
 .style-us{
     font-weight: bold;
@@ -80,4 +115,63 @@ p{
     font-size: 1.5rem;
     line-height: 2.25rem;
     color: #848484;
+    font-weight: 500;
+}
+.each-reason-container{
+    position: relative;
+    background-color: $color-white;
+    padding: 1.6rem 2rem;
+    margin-bottom: 1.5rem;
+    transition: all 2s;
+    // -webkit-transition: all 2s;
+    // -moz-transition: all 2s; 
+    // -ms-transition: all 2s; 
+    // -o-transition: all 2s;
+}
+.each-reason-header-text{
+    font-size: 1.7rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0, .7);
+    transition: all 2s;
+    // -webkit-transition: all 2s;
+    // -moz-transition: all 2s;
+    // -ms-transition: all 2s;
+    // -o-transition: all 2s; 
+
+    &:hover{
+        color: $color-light-blue;
+    }
+}
+.reason-number{
+    color: $color-light-blue;
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.display-reason{
+    display: block;
+    font-size: 1.5rem;
+    margin: 1.8rem 0 0 0;
+    transition: all 2s;
+}
+.each-reason-text{
+    display: none;
+    font-size: 1.5rem;
+    margin: 1.8rem 0 0 0;
+    transition: all 2s;
+}
+.toggle-reason-text{
+    font-size: 1.8rem;
+    position: absolute;
+    right: 3rem;
+    top: 2.3rem;
+    color: rgba(0,0,0, .7);
+}
+.scale-from-down{
+    animation-name: scaleUp;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 }

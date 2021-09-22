@@ -76,7 +76,7 @@ body{
     0% {
         transform: scale(.5)
     }
-    
+
     100% {
       transform: scale(1)
     }
@@ -124,10 +124,7 @@ p{
 //  }
  
 .navbar-container-bckgrnd2{
-    background: linear-gradient(to right,
-    rgba(#013365, .5),
-    rgba(#013365, 0.5));
-    background-color: rgba(#444444, .8);
+    background: rgba(40, 58, 90, 0.9);
 }
 
 .navigation{
@@ -318,7 +315,10 @@ p{
 }
 
 .active-link{
-    color: $color-light-blue
+    color: $color-light-blue;
+    &:visited{
+        color: $color-light-blue;
+    }
 }
 
 .navigation__side-bar-wrapper{

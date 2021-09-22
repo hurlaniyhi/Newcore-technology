@@ -1,19 +1,18 @@
-import { useState } from 'react';
+import { useContext } from 'react';
+import StateManager from '../context/stateManager'
 import '../style/styles.scss';
 import logo from '../assets/newcoreLogo.png'
 import illustrator1 from '../assets/illustrator1.png'
 import { FaRegPlayCircle } from 'react-icons/fa';
 import About from "./About"
 import Reasons from './Reasons';
-import Underline from "./reusable/Underline"
+//import Underline from "./reusable/Underline"
 
 const Home = () => {
-  const [activeLink, setActiveLink] = useState({home: "active-link", about: "", services: "", Projects: "", FAQ: "", contact: ""})
+  const {state, navItemColor} = useContext(StateManager)
 
-  function handleLink(e){
-    console.log({name: e.target.name})
-    e.target.href=`#${e.target.name}`
-    setActiveLink({home: "", about: "", services: "", Projects: "", FAQ: "", contact: "", [e.target.name]: "active-link"})
+  async function handleLink(e){
+    await navItemColor(e.target.name)
   }
 
   function handleNavLink(data){
@@ -41,23 +40,23 @@ const Home = () => {
       </label>
       <div className="navigation__side-bar-wrapper">
         <div className="side-bar-container">
-          <a className="side-bar-items" href="#home" onClick={() => handleNavLink("")} name="home">Home</a>
-          <a className="side-bar-items" href="#about" onClick={() => handleNavLink("")} name="about=">About</a>
-          <a className="side-bar-items" href="#services" onClick={() => handleNavLink("")} name="services">Services</a>
-          <a className="side-bar-items" href="#projects" onClick={() => handleNavLink("")} name="projects">Projects</a>
-          <a className="side-bar-items" href="#FAQ" onClick={() => handleNavLink("")} name="FAQ">FAQs</a>
-          <a className="side-bar-items" href="#contacts" onClick={() => handleNavLink("")} name="contacts">Contact</a>
+          <a href="#home" className="side-bar-items" href="#home" onClick={() => handleNavLink("")} name="home">Home</a>
+          <a href="#about" className="side-bar-items" href="#about" onClick={() => handleNavLink("")} name="about=">About</a>
+          <a href="#services" className="side-bar-items" href="#services" onClick={() => handleNavLink("")} name="services">Services</a>
+          <a href="#projects" className="side-bar-items" href="#projects" onClick={() => handleNavLink("")} name="projects">Projects</a>
+          <a href="#FAQ" className="side-bar-items" href="#FAQ" onClick={() => handleNavLink("")} name="FAQ">FAQs</a>
+          <a href="#contacts" className="side-bar-items" href="#contacts" onClick={() => handleNavLink("")} name="contacts">Contact</a>
         </div>
       </div>
       <img src={logo} className="logo-style"/>
       <div className="navbar-container">
         <div className="nav-item-container">
-          <a onClick={handleLink} className={`nav-item ${activeLink.home}`} name="home">Home</a>
-          <a onClick={handleLink} className={`nav-item ${activeLink.about}`} name="about">About</a>
-          <a onClick={handleLink} className={`nav-item ${activeLink.services}`} name="services">Services</a>
-          <a onClick={handleLink} className={`nav-item ${activeLink.projects}`} name="projects">Projects</a>
-          <a onClick={handleLink} className={`nav-item ${activeLink.FAQ}`} name="FAQ">FAQs</a>
-          <a onClick={handleLink} className={`nav-item ${activeLink.contacts}`} name="contacts">Contact</a>
+          <a href="#home" onClick={handleLink} className={`nav-item ${state.home}`} name="home">Home</a>
+          <a href="#about" onClick={handleLink} className={`nav-item ${state.about}`} name="about">About</a>
+          <a href="#services" onClick={handleLink} className={`nav-item ${state.services}`} name="services">Services</a>
+          <a href="#projects" onClick={handleLink} className={`nav-item ${state.projects}`} name="projects">Projects</a>
+          <a href="#FAQ" onClick={handleLink} className={`nav-item ${state.FAQ}`} name="FAQ">FAQs</a>
+          <a href="#contacts" onClick={handleLink} className={`nav-item ${state.contacts}`} name="contacts">Contact</a>
         </div>
       </div>
       <div className="interface-container">
@@ -77,6 +76,8 @@ const Home = () => {
       
       <About />
       <Reasons />
+
+      <p className="texts"></p>
     </div>
   )
 }

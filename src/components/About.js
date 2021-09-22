@@ -9,12 +9,15 @@ const About = () => {
         const callback = function(entries){
             entries.forEach(entry =>{
                 if(entry.isIntersecting){
-                    document.querySelector(".navbar-container").classList.add("navbar-container-bckgrnd2")
-                    document.querySelector(".about-container").classList.add("move-from-bottom")
+                    console.log({ratio: entry.intersectionRatio})
+                    if(entry.intersectionRatio >= 0){
+                        document.querySelector(".navbar-container").classList.add("navbar-container-bckgrnd2")
+                        document.querySelector(".about-us-wrapper").classList.add("move-from-bottom")
+                    }
                 }
                 else{
                     document.querySelector(".navbar-container").classList.remove("navbar-container-bckgrnd2")
-                    document.querySelector(".about-container").classList.remove("move-from-bottom")
+                    document.querySelector(".about-us-wrapper").classList.remove("move-from-bottom")
                 }
             })
         }
@@ -28,11 +31,12 @@ const About = () => {
 
         return () => {
             observer = null;
-          };
+        };
     })
 
     return (
-        <div className="about-container">
+        <div id="about" className="about-container">
+            <div className="about-us-wrapper">
             <p className="about-title">About Us</p>
             <Underline />
             <div className="about-content-container">
@@ -67,6 +71,7 @@ const About = () => {
                         tool for business development.
                     </p>
                 </div>
+            </div>
             </div>
         </div>
     );

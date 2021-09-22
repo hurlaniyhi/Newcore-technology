@@ -36,7 +36,7 @@ $color-theme: #37507E;
   
     7% {
         opacity: 0;
-      transform: translateY(10rem);
+      transform: translateY(12rem);
     }
   
     100% {
@@ -62,6 +62,7 @@ p{
     background-color: $color-white;
     padding: 7rem 0rem 5rem 0;
     width: 100%;
+    //overflow: hidden;
 }
 .about-title{
     color: #37517E;
@@ -151,4 +152,7 @@ p{
 .list-text{
     margin: 0;
     padding: 0 0 0 1rem
+}
+.about-us-wrapper{
+  
 }

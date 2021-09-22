@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom'; 
 import './index.css';
 import Home from './components/Home';
-import About from './components/About';
+//import About from './components/About';
+import {StateProvider} from './context/stateManager'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home />
+    <StateProvider>
+      <Router>
+      <Home />
+      </Router>
+    </StateProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
