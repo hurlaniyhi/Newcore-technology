@@ -5,28 +5,28 @@ $color-white: #fff;
 $color-light-blue: #47B2E4;
 $color-theme: #37507E;
 
-@mixin respond($breakpoint) {
-    @if $breakpoint == phone {
-      @media (max-width: 37.5em) {
-        @content;
-      } //600px
-    }
-    @if $breakpoint == tab-port {
-      @media (max-width: 56.25em) {
-        @content;
-      } //900px
-    }
-    @if $breakpoint == tab-land {
-      @media (max-width: 75em) {
-        @content;
-      } //1200px
-    }
-    @if $breakpoint == big-desktop {
-      @media (min-width: 112.5em) {
-        @content;
-      } //1800px
-    }
-}
+// @mixin respond($breakpoint) {
+//     @if $breakpoint == phone {
+//       @media (max-width: 37.5em) {
+//         @content;
+//       } //600px
+//     }
+//     @if $breakpoint == tab-port {
+//       @media (max-width: 56.25em) {
+//         @content;
+//       } //900px
+//     }
+//     @if $breakpoint == tab-land {
+//       @media (max-width: 75em) {
+//         @content;
+//       } //1200px
+//     }
+//     @if $breakpoint == big-desktop {
+//       @media (min-width: 112.5em) {
+//         @content;
+//       } //1800px
+//     }
+// }
 
 @keyframes moveInBottom {
     0% {
@@ -66,11 +66,11 @@ p{
 }
 .about-title{
     color: #37517E;
-    font-weight: 900;
+    font-weight: 800;
     font-size: 3.2rem;
     line-height: 3.8rem;
     text-transform: uppercase;
-    font-family: 'Montserrat';
+    //font-family: 'Montserrat';
     text-align: center;
     margin: 0;
     padding: 0 3rem;

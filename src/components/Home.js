@@ -1,15 +1,27 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import StateManager from '../context/stateManager'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import '../style/styles.scss';
 import logo from '../assets/newcoreLogo.png'
 import illustrator1 from '../assets/illustrator1.png'
 import { FaRegPlayCircle } from 'react-icons/fa';
 import About from "./About"
 import Reasons from './Reasons';
+import Skills from './Skills'
+import Services from './Services'
 //import Underline from "./reusable/Underline"
 
 const Home = () => {
   const {state, navItemColor} = useContext(StateManager)
+
+  useEffect(() =>{
+    AOS.init({
+      duration: 800,
+      delay: 100,
+      easing: 'linear'
+    })
+  }, [])
 
   async function handleLink(e){
     await navItemColor(e.target.name)
@@ -61,8 +73,8 @@ const Home = () => {
       </div>
       <div className="interface-container">
         <div className="interface-text-container">
-          <p className="intro-text_1">Addressing your problem digitally...</p>
-          <p className="intro-text_2">We are team of talented engineers providing solutions to your problems</p>
+          <h1 className="intro-text_1">Addressing your problem digitally...</h1>
+          <h2 className="intro-text_2">We are team of talented engineers providing solutions to your problems</h2>
           <div className="getStarted-container">
             <a className="getStarted-button">Get started</a>
             <FaRegPlayCircle className="play-icon" />
@@ -76,8 +88,8 @@ const Home = () => {
       
       <About />
       <Reasons />
-
-      <p className="texts"></p>
+      <Skills />
+      <Services />
     </div>
   )
 }

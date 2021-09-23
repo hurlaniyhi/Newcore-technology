@@ -12,13 +12,13 @@ const Reasons = () => {
             entries.forEach(entry =>{
                 if(entry.isIntersecting){
                     if(entry.intersectionRatio >= 0){
-                        document.querySelector(".reasons-texts").classList.add("move-from-bottom")
-                        document.querySelector(".reasons-illustrator").classList.add("scale-from-down")
+                        //document.querySelector(".reasons-texts").classList.add("move-from-bottom")
+                        //document.querySelector(".reasons-illustrator").classList.add("scale-from-down")
                     }
                 }
                 else{
-                    document.querySelector(".reasons-texts").classList.remove("move-from-bottom")
-                    document.querySelector(".reasons-illustrator").classList.remove("scale-from-down")
+                    //document.querySelector(".reasons-texts").classList.remove("move-from-bottom")
+                    //document.querySelector(".reasons-illustrator").classList.remove("scale-from-down")
                 }
             })
         }
@@ -41,8 +41,8 @@ const Reasons = () => {
 
     return (
         <div className="reasons-container">
-            <div className="reasons-texts">
-                <p className="reason-title">Why Choose <span className="style-us">Us</span></p>
+            <div className="reasons-texts" data-aos='fade-up' data-aos-once={true}>
+                <h3 className="reason-title">Why Choose <strong>Us</strong></h3>
                 <p className="reason-description">
                     We are a genuinely customer-focused organization we provide 
                     highly-customized software and solutions which complements 
@@ -82,7 +82,7 @@ const Reasons = () => {
                     <p className={`${state.three}`}>jksjksajkkjsajja</p>
                 </div>
             </div>
-            <div className="reasons-illustrator">
+            <div className="reasons-illustrator" data-aos='zoom-in' data-aos-once={true}>
                 <img src={illustrator} className="illustrator-icon" />
             </div>
         </div>

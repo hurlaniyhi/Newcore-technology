@@ -1,0 +1,132 @@
+$color-home-background: #F2F5F9;
+$color-green: #6d9c7d;
+$color-deep-blue: #293C5F;
+$color-white: #fff;
+$color-light-blue: #47B2E4;
+$color-theme: #37507E;
+
+
+.services-container{
+    width: 100%;
+    padding: 7rem 0 5rem 0;
+}
+.service-title-wrapper{
+    width: 100%;
+}
+.services-title{
+    color: #37517E;
+    font-weight: 800;
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+    text-transform: uppercase;
+    //font-family: 'Montserrat';
+    text-align: center;
+    margin: 0;
+    padding: 0 3rem;
+}
+.service-description{
+    text-align: center;
+    font-size: 1.7rem;
+    color: rgba(0,0,0, .7);
+    margin-top: 2rem;
+    padding: 0 4%;
+}
+.each-service-container{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto 0 auto;
+    flex-wrap: wrap;
+}
+.service-wrapper{
+    //position: relative;
+    width: 20%;
+    height: 40rem;
+    background-color: $color-white;
+    margin: 0 1%;
+    box-shadow: 0 0 2.5rem 0 rgba(0, 0, 0, 0.1);
+    padding: 6rem 3rem;
+    transition: all ease-in-out 0.4s;
+    box-sizing: border-box;
+
+    @media(max-width: 1640px){
+        width: 24%;
+        height: 40rem;
+    }
+    @media(max-width: 1420px){
+        width: 30%;
+        height: 37rem;
+    }
+    @media(max-width: 1240px){
+        width: 40%;
+        height: 34rem;
+        margin-top: 2rem;
+    }
+    @media(max-width: 1140px){
+        width: 40%;
+        height: 40rem;
+    }
+    @media(max-width: 999px){
+        width: 47%;
+        height: 40rem;
+    }
+    @media(max-width: 900px){
+        width: 47%;
+        height: 37rem;
+    }
+    @media(max-width: 790px){
+        width: 47%;
+        height: 40rem;
+    }
+    @media(max-width: 790px){
+        width: 47%;
+        height: 42rem;
+    }
+    @media(max-width: 620px){
+        width: 65%;
+        height: 38rem;
+    }
+    @media(max-width: 500px){
+        width: 80%;
+        height: 38rem;
+    }
+    @media(max-width: 390px){
+        width: 90%;
+        height: 38rem;
+    }
+    @media(max-width: 340px){
+        width: 90%;
+        height: 42rem;
+    }
+    @media(max-width: 290px){
+        width: 92%;
+        height: 44rem;
+    }
+
+    &:hover{
+        margin-top: -1rem;
+
+        .service-type{
+            color: $color-light-blue;
+        }
+    }
+}
+.code-icon{
+    font-size: 3.2rem;
+    color: $color-light-blue;
+    margin-bottom: 1rem
+}
+.service-type{
+    font-weight: 500;
+    margin: 0 0 1.5rem 0;
+    font-size: 2.4rem;
+    color: $color-theme;
+}
+.service-info-text{
+    line-height: 2.4rem;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    color: rgba(0,0,0, .8);
+}
