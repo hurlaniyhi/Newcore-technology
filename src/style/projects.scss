@@ -1,0 +1,70 @@
+$color-home-background: #F2F5F9;
+$color-green: #6d9c7d;
+$color-deep-blue: #293C5F;
+$color-white: #fff;
+$color-light-blue: #47B2E4;
+$color-theme: #37507E;
+
+
+.projects-container{
+    width: 100%;
+    padding: 7rem 0 5rem 0;
+    background-color: $color-white;
+}
+.projects-wrapper{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto 0 auto;
+    flex-wrap: wrap;
+    transition: all ease-in-out 0.4s;
+
+    @media(max-width: 1640px){
+       width: 90%
+    }
+}
+.each-projects-wrapper{
+    width: 42rem;
+    height: 23rem;
+    margin: 0 1%;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    background-color: $color-home-background;
+    transition: all ease-in-out 0.4s;
+    overflow: hidden;
+
+    &:hover{
+        .project-image{
+            transform: scale(1.14);
+        }
+
+    }
+
+    @media(max-width: 1440px){
+        width: 34rem;
+        height: 20rem;
+    }
+    @media(max-width: 1200px){
+        width: 30rem;
+        height: 18rem;
+    }
+    @media(max-width: 1065px){
+        width: 35rem;
+        height: 18rem;
+    }
+    @media(max-width: 950px){
+        width: 40rem;
+        height: 21rem;
+    }
+    @media(max-width: 780px){
+        width: 70rem;
+        height: 30rem;
+    }
+}
+.project-image{
+    width: 100%;
+    height: 100%;
+    transition: all ease-in-out 0.5s;
+}
