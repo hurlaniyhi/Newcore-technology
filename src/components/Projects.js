@@ -1,5 +1,6 @@
 import React from 'react';
 import Underline from "./reusable/Underline"
+import { BiLink, BiPlus } from "react-icons/bi";
 import portfolio2 from '../assets/portfolio-2.jpg'
 import portfolio3 from '../assets/portfolio-3.jpg'
 import portfolio4 from '../assets/portfolio-4.jpg'
@@ -22,30 +23,84 @@ const Projects = () => {
             <div className="projects-wrapper" data-aos='fade-up'>
                 <div className="each-projects-wrapper">
                     <img src={portfolio2} className="project-image" />
+                    <div className="project-info">
+                        <h4 className="project-info-title">Smart Teaches</h4>
+                        <p className="project-info-text" >Web App.</p>
+                        <BiPlus className="link-icon plus-icon" />
+                        <BiLink className="link-icon" />
+                    </div>
                 </div>
                 <div className="each-projects-wrapper">
                     <img src={portfolio3} className="project-image" />
+                    <div className="project-info">
+                        <h4 className="project-info-title">Smart Teaches</h4>
+                        <p className="project-info-text" >Web App.</p>
+                        <BiPlus className="link-icon plus-icon" />
+                        <BiLink className="link-icon" />
+                    </div>
                 </div>
                 <div className="each-projects-wrapper">
                     <img src={portfolio4} className="project-image" />
+                    <div className="project-info">
+                        <h4 className="project-info-title">Smart Teaches</h4>
+                        <p className="project-info-text" >Web App.</p>
+                        <BiPlus className="link-icon plus-icon" />
+                        <BiLink className="link-icon" />
+                    </div>
                 </div>
                 <div className="each-projects-wrapper">
                     <img src={portfolio5} className="project-image" />
+                    <div className="project-info">
+                        <h4 className="project-info-title">Smart Teaches</h4>
+                        <p className="project-info-text" >Web App.</p>
+                        <BiPlus className="link-icon plus-icon" />
+                        <BiLink className="link-icon" />
+                    </div>
                 </div>
                 <div className="each-projects-wrapper">
                     <img src={portfolio6} className="project-image" />
+                    <div className="project-info">
+                        <h4 className="project-info-title">Smart Teaches</h4>
+                        <p className="project-info-text" >Web App.</p>
+                        <BiPlus className="link-icon plus-icon" />
+                        <BiLink className="link-icon" />
+                    </div>
                 </div>
                 <div className="each-projects-wrapper">
                     <img src={portfolio7} className="project-image" />
+                    <div className="project-info">
+                        <h4 className="project-info-title">Smart Teaches</h4>
+                        <p className="project-info-text" >Web App.</p>
+                        <BiPlus className="link-icon plus-icon" />
+                        <BiLink className="link-icon" />
+                    </div>
                 </div>
                 <div className="each-projects-wrapper">
                     <img src={portfolio8} className="project-image" />
+                    <div className="project-info">
+                        <h4 className="project-info-title">Smart Teaches</h4>
+                        <p className="project-info-text" >Web App.</p>
+                        <BiPlus className="link-icon plus-icon" />
+                        <BiLink className="link-icon" />
+                    </div>
                 </div>
                 <div className="each-projects-wrapper">
                     <img src={portfolio9} className="project-image" />
+                    <div className="project-info">
+                        <h4 className="project-info-title">Smart Teaches</h4>
+                        <p className="project-info-text" >Web App.</p>
+                        <BiPlus className="link-icon plus-icon" />
+                        <BiLink className="link-icon" />
+                    </div>
                 </div>
                 <div className="each-projects-wrapper">
                     <img src={portfolio10} className="project-image" />
+                    <div className="project-info">
+                        <h4 className="project-info-title">Smart Teaches</h4>
+                        <p className="project-info-text" >Web App.</p>
+                        <BiPlus className="link-icon plus-icon" />
+                        <BiLink className="link-icon" />
+                    </div>
                 </div>
             </div>
         </div>

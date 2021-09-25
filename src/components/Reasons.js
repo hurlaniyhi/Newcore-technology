@@ -54,10 +54,10 @@ const Reasons = () => {
                         <FiChevronDown onClick={() =>handleDropDown("one")} className="toggle-reason-text" />
                     }
                     <p className="each-reason-header-text">
-                        <span className="reason-number">01 &nbsp;&nbsp;&nbsp;</span>
+                        <span id="allowMe" className="reason-number">01 &nbsp;&nbsp;&nbsp;</span>
                         Protect your organization
                     </p>
-                    <p className={`${state.one}`}>jksjksajkkjsajja</p>
+                    <p data-aos-anchor="#allowMe" className={`${state.one}`}>Are you a small, medium or large entrepreneur? then protect / prevent your business from fraud, by integrate our latest technology monitoring system for figures and stocks' accountability.</p>
                 </div>
                 <div className="each-reason-container">
                     {state.two != "each-reason-text" ? 
@@ -65,10 +65,10 @@ const Reasons = () => {
                         <FiChevronDown onClick={() =>handleDropDown("two")} className="toggle-reason-text" />
                     }
                     <p className="each-reason-header-text">
-                        <span className="reason-number">01 &nbsp;&nbsp;&nbsp;</span>
-                        Protect your organization
+                        <span className="reason-number">02 &nbsp;&nbsp;&nbsp;</span>
+                        Increase numbers of genius in your institution
                     </p>
-                    <p className={`${state.two}`}>jksjksajkkjsajja</p>
+                    <p className={`${state.two}`}>Are you a primary, secondary or tertiary institution owner? then lets make learning easy, fast and acurate for your students, by integrating latest technology on educational develompent software.</p>
                 </div>
                 <div className="each-reason-container">
                 {state.three != "each-reason-text" ? 
@@ -76,10 +76,10 @@ const Reasons = () => {
                         <FiChevronDown onClick={() =>handleDropDown("three")} className="toggle-reason-text" />
                     }
                     <p className="each-reason-header-text">
-                        <span className="reason-number">01 &nbsp;&nbsp;&nbsp;</span>
-                        Protect your organization
+                        <span className="reason-number">03 &nbsp;&nbsp;&nbsp;</span>
+                        Safeguard your family, loved ones and properties
                     </p>
-                    <p className={`${state.three}`}>jksjksajkkjsajja</p>
+                    <p className={`${state.three}`}>Are you a family or properties owner? then protect the precious surround you with our surveillance gadgets and software.</p>
                 </div>
             </div>
             <div className="reasons-illustrator" data-aos='zoom-in' data-aos-once={true}>

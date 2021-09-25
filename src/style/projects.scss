@@ -26,6 +26,7 @@ $color-theme: #37507E;
     }
 }
 .each-projects-wrapper{
+    position: relative;
     width: 42rem;
     height: 23rem;
     margin: 0 1%;
@@ -38,6 +39,9 @@ $color-theme: #37507E;
     &:hover{
         .project-image{
             transform: scale(1.14);
+        }
+        .project-info{
+            opacity: 1;
         }
 
     }
@@ -67,4 +71,56 @@ $color-theme: #37507E;
     width: 100%;
     height: 100%;
     transition: all ease-in-out 0.5s;
+}
+.project-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    position: absolute;
+    left: .5rem;
+    bottom: 0;
+    z-index: 3;
+    right: .5rem;
+    transition: all 0.3s;
+    background: rgba(55, 81, 126, 0.8);
+    height: 6.5rem;
+    padding: 0rem 1.3rem;
+}
+.project-info-title{
+    display: inline-block;
+    font-size: 1.8rem;
+    color: $color-light-blue;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    width: 14rem;
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover{
+        color: rgba($color-light-blue, .7);
+    }
+}
+.project-info-text{
+    font-size: 1.5rem;
+    color: $color-white;
+    padding: 0;
+    margin: 0;
+}
+.link-icon{
+    font-size: 2.7rem;
+    position: absolute;
+    right: 1.3rem;
+    top: 50%;
+    color: $color-white;
+    transform: translateY(-50%);
+    transition: all .2s;
+
+    &:hover{
+        color: $color-light-blue
+    }
+}
+.plus-icon{
+    right: 4.2rem;
 }
