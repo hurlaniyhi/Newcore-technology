@@ -10,6 +10,7 @@ $color-theme: #37507E;
     width: 100%;
     padding: 7rem 0 5rem 0;
     background-color: $color-home-background;
+    overflow: hidden;
 }
 .team-member-wrapper{
     width: 85%;
@@ -29,7 +30,7 @@ $color-theme: #37507E;
     position: relative;
     width: 41rem;
     height: 47rem;
-    margin: 0 0 5rem 0; // 0 1.5 5 1.5
+    margin:  0rem 1.5rem 5rem 1.5rem;
     overflow: hidden;
    // background-color: green;
 
@@ -81,19 +82,22 @@ $color-theme: #37507E;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+// .team-member-img{
+//     transform: rotateY(360deg);
+// }
 .member-name{
     font-size: 2rem;
     color: $color-white;
     text-align: center;
     margin: 4rem 0 0 0;
-    padding: 0 0; // 0 1
+    padding: 0 1rem;
     transition: all .4s
 }
 .member-role{
     font-size: 1.5rem;
     color: rgba($color-home-background, .6);
     margin: 0;
-    padding: .5rem; //1
+    padding: 1rem;
     text-align: center;
 }
 .member-info-wrapper{
@@ -136,10 +140,10 @@ $color-theme: #37507E;
     transform: translateY(-50%);
     color: rgba($color-home-background, .7);
 }
-.hide-member{
-    display: none;
+// .hide-member{
+//     display: none;
 
-    @media(max-width: 1550px){
-       display: block;
-    }
-}
+//     @media(max-width: 1550px){
+//        display: block;
+//     }
+// }

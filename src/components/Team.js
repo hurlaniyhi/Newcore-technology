@@ -2,9 +2,10 @@ import React, {useEffect} from 'react';
 import { FaUser } from "react-icons/fa";
 import { BsFiles } from "react-icons/bs";
 import Underline from "./reusable/Underline"
-import member1 from "../assets/image13.png"
-import member2 from "../assets/image14.png"
-import member3 from "../assets/image12.png"
+import member1 from "../assets/rhydhur6.png"
+import member2 from "../assets/moh2.png"
+import member3 from "../assets/moh1.png"
+import member4 from "../assets/newton2.png"
 import '../style/team.scss'
 
 const Team = () => {
@@ -60,7 +61,7 @@ const Team = () => {
                         </div>
                     </div>
                     <div className="team-member-overlay"></div>
-                    <img src={member3} className="team-member-image"/>
+                    <img src={member4} className="team-member-image"/>
                 </div>
                 <div className="team-member" data-aos='fade-down'>
                     <div className="team-member-details">
@@ -114,7 +115,7 @@ const Team = () => {
                         </div>
                     </div>
                     <div className="team-member-overlay"></div>
-                    <img src={member2} className="team-member-image" />
+                    <img src={member3} className="team-member-image" />
                 </div>
             </div>
         </div>

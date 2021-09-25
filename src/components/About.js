@@ -42,7 +42,7 @@ const About = () => {
                 <div className="about-content-container">
                     <div className="about-text-block_1">
                         <p className="about-text">
-                            OBINS Technology Ltd. is an operating organization. We are one of 
+                            Newcore Technologies is an operating organization. We are one of 
                             Nigeria’s fastest-growing information technology service and software
                             development companies, utilizing an extensive and robust indigenous 
                             infrastructure to provide bespoke software solutions to clients and partners worldwide. 
@@ -51,14 +51,14 @@ const About = () => {
                         <div className="about-text-list">
                             <FaCheck className="bullet-check" />
                             <p className="list-text">
-                                OBINS Technology Ltd. is an operating organization. We are one of 
+                                Newcore Technologies is an operating organization. We are one of 
                                 Nigeria’s fastest-growing information technology service and software
                             </p>
                         </div>
                         <div className="about-text-list">
                             <FaCheck className="bullet-check" />
                             <p className="list-text">
-                                OBINS Technology Ltd. is an operating organization. We are one of 
+                                Newcore Technologies is an operating organization. We are one of 
                                 Nigeria’s fastest-growing information technology service and software
                             </p>
                         </div>

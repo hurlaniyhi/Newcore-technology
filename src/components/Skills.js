@@ -45,7 +45,7 @@ const Skills = () => {
             <div className="skills-texts" data-aos='fade-up-left' data-aos-once={true}>
                 <h3 className="skills-title">Skills level</h3>
                 <p className="skills-description">
-                    OBINS Technology Ltd., our team are confidence enough to handle your problems digitally, share it with us and consider it done!...
+                    Newcore Technologies, our team are confidence enough to handle your problems digitally, share it with us and consider it done!...
                 </p>
                 <div className="skills-levels-wrapper">
                     <span className="skills-level-text">Web design / Develompent &amp; Networking <i className="level-val">{webDesign}</i></span>

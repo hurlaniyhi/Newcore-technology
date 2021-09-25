@@ -1,15 +1,18 @@
 import React from 'react';
 import Underline from "./reusable/Underline"
 import { BiLink, BiPlus } from "react-icons/bi";
-import portfolio2 from '../assets/portfolio-2.jpg'
-import portfolio3 from '../assets/portfolio-3.jpg'
+import portfolio2 from '../assets/vsprout.png'
+import portfolio3 from '../assets/managerApp.png'
 import portfolio4 from '../assets/portfolio-4.jpg'
-import portfolio5 from '../assets/portfolio-5.jpg'
+import portfolio5 from '../assets/natour.png'
 import portfolio6 from '../assets/portfolio-6.jpg'
 import portfolio7 from '../assets/portfolio-7.jpg'
 import portfolio8 from '../assets/portfolio-8.jpg'
-import portfolio9 from '../assets/portfolio-9.jpg'
-import portfolio10 from '../assets/portfolio-4.jpg'
+import portfolio9 from '../assets/cbt.png'
+import portfolio10 from '../assets/portfolio-5.jpg'
+import portfolio11 from '../assets/rhymes.jpg'
+import portfolio12 from '../assets/shopwyse.jpg'
+import portfolio13 from '../assets/thinklex.jpg'
 import '../style/projects.scss'
 
 const Projects = () => {
@@ -24,7 +27,7 @@ const Projects = () => {
                 <div className="each-projects-wrapper">
                     <img src={portfolio2} className="project-image" />
                     <div className="project-info">
-                        <h4 className="project-info-title">Smart Teaches</h4>
+                        <h4 className="project-info-title">School Portal</h4>
                         <p className="project-info-text" >Web App.</p>
                         <BiPlus className="link-icon plus-icon" />
                         <BiLink className="link-icon" />
@@ -33,7 +36,7 @@ const Projects = () => {
                 <div className="each-projects-wrapper">
                     <img src={portfolio3} className="project-image" />
                     <div className="project-info">
-                        <h4 className="project-info-title">Smart Teaches</h4>
+                        <h4 className="project-info-title">Staff Manager</h4>
                         <p className="project-info-text" >Web App.</p>
                         <BiPlus className="link-icon plus-icon" />
                         <BiLink className="link-icon" />
@@ -42,7 +45,7 @@ const Projects = () => {
                 <div className="each-projects-wrapper">
                     <img src={portfolio4} className="project-image" />
                     <div className="project-info">
-                        <h4 className="project-info-title">Smart Teaches</h4>
+                        <h4 className="project-info-title">Pay Now</h4>
                         <p className="project-info-text" >Web App.</p>
                         <BiPlus className="link-icon plus-icon" />
                         <BiLink className="link-icon" />
@@ -51,7 +54,7 @@ const Projects = () => {
                 <div className="each-projects-wrapper">
                     <img src={portfolio5} className="project-image" />
                     <div className="project-info">
-                        <h4 className="project-info-title">Smart Teaches</h4>
+                        <h4 className="project-info-title">Tour and Smile</h4>
                         <p className="project-info-text" >Web App.</p>
                         <BiPlus className="link-icon plus-icon" />
                         <BiLink className="link-icon" />
@@ -60,7 +63,7 @@ const Projects = () => {
                 <div className="each-projects-wrapper">
                     <img src={portfolio6} className="project-image" />
                     <div className="project-info">
-                        <h4 className="project-info-title">Smart Teaches</h4>
+                        <h4 className="project-info-title">Ride Easily</h4>
                         <p className="project-info-text" >Web App.</p>
                         <BiPlus className="link-icon plus-icon" />
                         <BiLink className="link-icon" />
@@ -69,7 +72,7 @@ const Projects = () => {
                 <div className="each-projects-wrapper">
                     <img src={portfolio7} className="project-image" />
                     <div className="project-info">
-                        <h4 className="project-info-title">Smart Teaches</h4>
+                        <h4 className="project-info-title">Be Beautiful</h4>
                         <p className="project-info-text" >Web App.</p>
                         <BiPlus className="link-icon plus-icon" />
                         <BiLink className="link-icon" />
@@ -78,7 +81,7 @@ const Projects = () => {
                 <div className="each-projects-wrapper">
                     <img src={portfolio8} className="project-image" />
                     <div className="project-info">
-                        <h4 className="project-info-title">Smart Teaches</h4>
+                        <h4 className="project-info-title">Clean Up</h4>
                         <p className="project-info-text" >Web App.</p>
                         <BiPlus className="link-icon plus-icon" />
                         <BiLink className="link-icon" />
@@ -87,7 +90,7 @@ const Projects = () => {
                 <div className="each-projects-wrapper">
                     <img src={portfolio9} className="project-image" />
                     <div className="project-info">
-                        <h4 className="project-info-title">Smart Teaches</h4>
+                        <h4 className="project-info-title">CBT Site</h4>
                         <p className="project-info-text" >Web App.</p>
                         <BiPlus className="link-icon plus-icon" />
                         <BiLink className="link-icon" />
@@ -96,8 +99,35 @@ const Projects = () => {
                 <div className="each-projects-wrapper">
                     <img src={portfolio10} className="project-image" />
                     <div className="project-info">
-                        <h4 className="project-info-title">Smart Teaches</h4>
+                        <h4 className="project-info-title">Savetify</h4>
                         <p className="project-info-text" >Web App.</p>
+                        <BiPlus className="link-icon plus-icon" />
+                        <BiLink className="link-icon" />
+                    </div>
+                </div>
+                <div className="each-projects-wrapper">
+                    <img src={portfolio11} className="project-image" />
+                    <div className="project-info">
+                        <h4 className="project-info-title">Rhymes</h4>
+                        <p className="project-info-text" >Mobile App.</p>
+                        <BiPlus className="link-icon plus-icon" />
+                        <BiLink className="link-icon" />
+                    </div>
+                </div>
+                <div className="each-projects-wrapper">
+                    <img src={portfolio12} className="project-image" />
+                    <div className="project-info">
+                        <h4 className="project-info-title">Shopwyse</h4>
+                        <p className="project-info-text" >Mobile App.</p>
+                        <BiPlus className="link-icon plus-icon" />
+                        <BiLink className="link-icon" />
+                    </div>
+                </div>
+                <div className="each-projects-wrapper">
+                    <img src={portfolio13} className="project-image" />
+                    <div className="project-info">
+                        <h4 className="project-info-title">Thinklex</h4>
+                        <p className="project-info-text" >Mobile App.</p>
                         <BiPlus className="link-icon plus-icon" />
                         <BiLink className="link-icon" />
                     </div>
