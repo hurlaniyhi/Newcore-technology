@@ -8,7 +8,7 @@ import '../style/services.scss'
 
 const Services = () => {
     return (
-        <div className="services-container">
+        <div id="services" className="services-container">
             <div className="service-title-wrapper" data-aos='fade-up'>
                 <h2 id="" className="services-title">Services</h2>
                 <Underline />
@@ -18,7 +18,7 @@ const Services = () => {
             <div className="each-service-container">
                 <div className="service-wrapper" data-aos='zoom-in'>
                     <FaCode className="code-icon" />
-                    <h4 className="service-type">Web design / Development</h4>
+                    <h4 className="service-type">App design / Development</h4>
                     <p className="service-info-text">
                         We build responsive web site / engine that detect the visitor's screen size
                         &amp; orientation and change the layout accordingly with flexible layouts,

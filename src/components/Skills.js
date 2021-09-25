@@ -48,7 +48,7 @@ const Skills = () => {
                     Newcore Technologies, our team are confidence enough to handle your problems digitally, share it with us and consider it done!...
                 </p>
                 <div className="skills-levels-wrapper">
-                    <span className="skills-level-text">Web design / Develompent &amp; Networking <i className="level-val">{webDesign}</i></span>
+                    <span className="skills-level-text">App design / Develompent &amp; Networking <i className="level-val">{webDesign}</i></span>
                     <div className="level-bar-wrapper">
                         <div className="level-bar bar1" style={{width: webDesign}}></div>
                     </div>

@@ -17,7 +17,7 @@ import '../style/projects.scss'
 
 const Projects = () => {
     return (
-        <div className="projects-container">
+        <div id="projects" className="projects-container">
             <div className="service-title-wrapper" data-aos='fade-up'>
                 <h2 id="" className="services-title">Projects</h2>
                 <Underline />
