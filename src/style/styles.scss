@@ -501,11 +501,6 @@ p{
 .illustrator1{
     width: 65rem;
     height: 53rem;
-    // animation-name: upAndDown;
-    // animation-duration: 2s;
-    // animation-delay: 0s;
-    // animation-iteration-count: infinite;
-    // animation-direction: alternate;
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
 
     @media(max-width: 1470px){
@@ -519,7 +514,7 @@ p{
     @media(max-width: 980px){
         width: 38rem;
         height: 30rem;
-        animation-name: none;
+        //animation-name: none;
     }
     @media(max-width: 600px){
         width: 42rem;
