@@ -13,6 +13,7 @@ import Services from './Services'
 import Projects from './Projects'
 import Team from './Team'
 import Contact from './Contact'
+import Footer from './Footer'
 
 const Home = () => {
   const {state, navItemColor} = useContext(StateManager)
@@ -95,6 +96,7 @@ const Home = () => {
       <Projects />
       <Team />
       <Contact />
+      <Footer />
     </div>
   )
 }
