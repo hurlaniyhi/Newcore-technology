@@ -108,16 +108,21 @@ a,
 label,
 span,
 div,
+img,
 p{
     -webkit-tap-highlight-color: rgba(0,0,0,0)
+}
+
+.overall-container{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 .main-container{
     width: 100%;
     height: 100%;
     position: relative;
-    //background-color: $color-home-background
-    //overflow: hidden
 }
 .main-container-tweak{
     overflow: hidden;
@@ -134,7 +139,7 @@ p{
     justify-content: flex-end;
     align-items: center;
     transition: all 0.15s;
-    background: $color-theme;
+    //background: $color-theme;
 }
 
 // .navbar-container-bckgrnd1{
@@ -403,11 +408,19 @@ p{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    position: relative;
 
     @media(max-width: 980px){
         flex-direction: column-reverse;
         height: 100vh;
     }
+}
+.toggle-nav-bkg{
+    position: absolute;
+    top: 10rem;
+    left: 4rem;
+    width: 5rem;
+    opacity: 0;
 }
 .interface-text-container{
     width: 70rem;

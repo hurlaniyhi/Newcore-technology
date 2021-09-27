@@ -45,23 +45,12 @@ $color-theme: #37507E;
     }
   }
 
-input,
-textarea,
-button,
-select,
-a,
-label,
-span,
-div,
-p{
-    -webkit-tap-highlight-color: rgba(0,0,0,0)
-}
-
 .about-container{
     margin: 8rem 0 3rem 0;
     background-color: $color-white;
     padding: 7rem 0rem 5rem 0;
     width: 100%;
+    box-sizing: border-box;
     //overflow: hidden;
 }
 .about-title{

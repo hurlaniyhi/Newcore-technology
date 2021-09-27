@@ -5,35 +5,6 @@ import { FaCheck } from 'react-icons/fa';
 
 const About = () => {
 
-    useEffect(()=>{
-        const callback = function(entries){
-            entries.forEach(entry =>{
-                if(entry.isIntersecting){
-                    console.log({ratio: entry.intersectionRatio})
-                    if(entry.intersectionRatio >= 0){
-                        document.querySelector(".navbar-container").classList.add("navbar-container-bckgrnd2")
-                        //document.querySelector(".about-us-wrapper").classList.add("move-from-bottom")
-                    }
-                }
-                else{
-                    document.querySelector(".navbar-container").classList.remove("navbar-container-bckgrnd2")
-                    //document.querySelector(".about-us-wrapper").classList.remove("move-from-bottom")
-                }
-            })
-        }
-
-        let observer = new IntersectionObserver(callback)
-        const target = document.querySelectorAll(".about-text")
-        console.log(target)
-        target.forEach(target=>{
-            observer.observe(target)
-        })
-
-        return () => {
-            observer = null;
-        };
-    })
-
     return (
         <div id="about" className="about-container">
             <div className="about-us-wrapper" data-aos='fade-up' data-aos-once={true}>

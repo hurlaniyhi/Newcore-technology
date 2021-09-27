@@ -39,7 +39,7 @@ const Footer = () =>{
                     </div>
                 </div>
                 <div className="each-footer-info useful-link">
-                    <h3>Useful Links</h3>
+                    <h3>Our Services</h3>
                     <div className="footer-list-wrapper">
                         <div className="footer-list">
                             <FaChevronRight className="footer-icon" />
@@ -64,7 +64,7 @@ const Footer = () =>{
                     </div>
                 </div>
                 <div className="each-footer-info useful-link">
-                    <h3>Our Social Network</h3>
+                    <h3>Our Social Networks</h3>
                     <p className="footer-list-text color-black">Follow us on social media</p>
                     <div className="footer-list link-icons-group">
                         <FaFacebook className="link-icons" />
@@ -76,7 +76,7 @@ const Footer = () =>{
             </div>
             <div className="footer-bar">
                 <p> © Copyright <script>document.write(new Date().getFullYear());</script>2021 <strong><span>Newcore Technologies</span></strong> All Rights Reserved</p>
-                <p>Design by <span>Ridwan Kolawole</span></p>
+                <p>Designed by <span>Ridwan Kolawole</span></p>
             </div>
         </div>
     );

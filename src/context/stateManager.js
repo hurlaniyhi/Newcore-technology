@@ -9,7 +9,7 @@ const stateReducer = (state, action) => {
             return {...state, one: action.payload.one, two: action.payload.two, three: action.payload.three}
 
         case "update-nav-colors": 
-            return {...state, home: action.payload.home, about: action.payload.about, services: action.payload.services, projects: action.payload.projects, FAQ: action.payload.FAQ, contact: action.payload.contact
+            return {...state, home: action.payload.home, about: action.payload.about, services: action.payload.services, projects: action.payload.projects, FAQ: action.payload.FAQ, contacts: action.payload.contacts
             }
     }
 }
@@ -38,7 +38,7 @@ export const StateProvider = (props) => {
     }
 
     async function navItemColor(data){
-        let navClass = {home: "", about: "", services: "", Projects: "", FAQ: "", contact: "", [data]: "active-link"}
+        let navClass = {home: "", about: "", services: "", Projects: "", FAQ: "", contacts: "", [data]: "active-link"}
         await dispatch({type: "update-nav-colors", payload: navClass})
     }
 
