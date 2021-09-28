@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from 'react';
 import StateManager from '../context/stateManager'
 import '../style/styles.scss';
 import logo from '../assets/newcoreLogo.png'
+import sideBarImage from '../assets/side-bar-img.png'
 import illustrator1 from '../assets/illustrator1.png'
 import { FaRegPlayCircle } from 'react-icons/fa';
 
@@ -39,7 +40,11 @@ const FrontView = () => {
     async function handleLink(e){
         await navItemColor(e.target.name)
         //console.log({state})
-      }
+    }
+
+    function removeSideBar(){
+        document.querySelector(".navigation__checkbox").checked = false
+    }
     
       function handleNavLink(data){
         if(data === "checkbox"){
@@ -63,16 +68,17 @@ const FrontView = () => {
             <label for="navi-toggle" onClick={() => handleNavLink("checkbox")} class="navigation__button">
                 <span class="navigation__icon">&nbsp;</span>
             </label>
-            <div className="navigation__side-bar-wrapper">
-                <div className="side-bar-container">
+            <div className="navigation__side-bar-wrapper" onClick={removeSideBar}>
+            </div>
+            <div className="side-bar-container">
                     <a href="#home" className="side-bar-items" href="#home" onClick={() => handleNavLink("")} name="home">Home</a>
                     <a href="#about" className="side-bar-items" href="#about" onClick={() => handleNavLink("")} name="about=">About</a>
                     <a href="#services" className="side-bar-items" href="#services" onClick={() => handleNavLink("")} name="services">Services</a>
                     <a href="#projects" className="side-bar-items" href="#projects" onClick={() => handleNavLink("")} name="projects">Projects</a>
-                    <a href="#FAQ" className="side-bar-items" href="#FAQ" onClick={() => handleNavLink("")} name="FAQ">FAQs</a>
+                    <a href="#FAQ" className="side-bar-items" href="#FAQ" onClick={() => handleNavLink("")} name="FAQ">Team</a>
                     <a href="#contacts" className="side-bar-items" href="#contacts" onClick={() => handleNavLink("")} name="contacts">Contact</a>
+                    <img src={sideBarImage} className="side-bar-img" />
                 </div>
-            </div>
             <img src={logo} className="logo-style"/>
             <div className="navbar-container">
                 <div className="nav-item-container">
@@ -80,7 +86,7 @@ const FrontView = () => {
                     <a href="#about" onClick={handleLink} className={`nav-item ${state.about}`} name="about">About</a>
                     <a href="#services" onClick={handleLink} className={`nav-item ${state.services}`} name="services">Services</a>
                     <a href="#projects" onClick={handleLink} className={`nav-item ${state.projects}`} name="projects">Projects</a>
-                    <a href="#FAQ" onClick={handleLink} className={`nav-item ${state.FAQ}`} name="FAQ">FAQs</a>
+                    <a href="#FAQ" onClick={handleLink} className={`nav-item ${state.FAQ}`} name="FAQ">Team</a>
                     <a href="#contacts" onClick={handleLink} className={`nav-item ${state.contacts}`} name="contacts">Contact</a>
                 </div>
             </div>

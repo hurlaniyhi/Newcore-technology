@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import { FaUser } from "react-icons/fa";
+import { FaCertificate } from "react-icons/fa";
 import { BsFiles } from "react-icons/bs";
 import Underline from "./reusable/Underline"
 import member1 from "../assets/rhydhur6.png"
@@ -10,35 +10,8 @@ import '../style/team.scss'
 
 const Team = () => {
 
-    // useEffect(()=>{
-    //     const callback = function(entries){
-    //         entries.forEach(entry =>{
-    //             if(entry.isIntersecting){
-    //                 console.log({ratio: entry.intersectionRatio})
-    //                 if(entry.intersectionRatio >= 0){
-    //                     document.querySelector(".team-member-image").classList.add("move-from-bottom")
-    //                 }
-    //             }
-    //             else{
-    //                 document.querySelector(".team-member-image").classList.remove("move-from-bottom")
-    //             }
-    //         })
-    //     }
-
-    //     let observer = new IntersectionObserver(callback)
-    //     const target = document.querySelectorAll(".team-member")
-    //     console.log(target)
-    //     target.forEach(target=>{
-    //         observer.observe(target)
-    //     })
-
-    //     return () => {
-    //         observer = null;
-    //     };
-    // })
-
     return (
-        <div className="team-container">
+        <div id="FAQ" className="team-container">
             <div className="service-title-wrapper" data-aos='zoom-in'>
                 <h2 id="" className="services-title">Our Team</h2>
                 <Underline />
@@ -55,8 +28,8 @@ const Team = () => {
                                 <p className="member-experience">3 Years of experience</p>
                             </div>
                             <div className="member-info-2">
-                                <FaUser className="age-icon" />
-                                <p className="member-experience">Age: 24 years </p>
+                                <FaCertificate className="age-icon" />
+                                <p className="member-experience">B.ENG., GMNSE</p>
                             </div>
                         </div>
                     </div>
@@ -73,8 +46,8 @@ const Team = () => {
                                 <p className="member-experience">3 Years of experience</p>
                             </div>
                             <div className="member-info-2">
-                                <FaUser className="age-icon" />
-                                <p className="member-experience">Age: 24 years </p>
+                                <FaCertificate className="age-icon" />
+                                <p className="member-experience">B.ENG., GMNSE</p>
                             </div>
                         </div>
                     </div>
@@ -91,8 +64,8 @@ const Team = () => {
                                 <p className="member-experience">3 Years of experience</p>
                             </div>
                             <div className="member-info-2">
-                                <FaUser className="age-icon" />
-                                <p className="member-experience">Age: 24 years </p>
+                                <FaCertificate className="age-icon" />
+                                <p className="member-experience">B.ENG., GMNSE</p>
                             </div>
                         </div>
                     </div>
@@ -109,8 +82,8 @@ const Team = () => {
                                 <p className="member-experience">3 Years of experience</p>
                             </div>
                             <div className="member-info-2">
-                                <FaUser className="age-icon" />
-                                <p className="member-experience">Age: 24 years </p>
+                                <FaCertificate className="age-icon" />
+                                <p className="member-experience">B.ENG., GMNSE</p>
                             </div>
                         </div>
                     </div>

@@ -30,7 +30,7 @@ const Projects = () => {
                         <h4 className="project-info-title">School Portal</h4>
                         <p className="project-info-text" >Web App.</p>
                         <BiPlus className="link-icon plus-icon" />
-                        <BiLink className="link-icon" />
+                        <a href="https://virtuous-sprout.herokuapp.com" target="_blank" rel="noopener noreferrer"><BiLink className="link-icon" /></a>
                     </div>
                 </div>
                 <div className="each-projects-wrapper">
@@ -39,7 +39,7 @@ const Projects = () => {
                         <h4 className="project-info-title">Staff Manager</h4>
                         <p className="project-info-text" >Web App.</p>
                         <BiPlus className="link-icon plus-icon" />
-                        <BiLink className="link-icon" />
+                        <a href="https://check-d-deck.herokuapp.com" target="_blank" rel="noopener noreferrer"><BiLink className="link-icon" /></a>
                     </div>
                 </div>
                 <div className="each-projects-wrapper">
@@ -57,7 +57,7 @@ const Projects = () => {
                         <h4 className="project-info-title">Tour and Smile</h4>
                         <p className="project-info-text" >Web App.</p>
                         <BiPlus className="link-icon plus-icon" />
-                        <BiLink className="link-icon" />
+                        <a href="https://tourandsmile.herokuapp.com" target="_blank" rel="noopener noreferrer"><BiLink className="link-icon" /></a>
                     </div>
                 </div>
                 <div className="each-projects-wrapper">
@@ -93,7 +93,7 @@ const Projects = () => {
                         <h4 className="project-info-title">CBT Site</h4>
                         <p className="project-info-text" >Web App.</p>
                         <BiPlus className="link-icon plus-icon" />
-                        <BiLink className="link-icon" />
+                        <a href="https://cbtquiz.netlify.app/" target="_blank" rel="noopener noreferrer"><BiLink className="link-icon" /></a>
                     </div>
                 </div>
                 <div className="each-projects-wrapper">
@@ -120,7 +120,7 @@ const Projects = () => {
                         <h4 className="project-info-title">Shopwyse</h4>
                         <p className="project-info-text" >Mobile App.</p>
                         <BiPlus className="link-icon plus-icon" />
-                        <BiLink className="link-icon" />
+                        <a href="https://drive.google.com/file/d/1KQqhHzfJttZCk23h_-BqibATsFUXthpr/view?usp=sharing" target="_blank" rel="noopener noreferrer"><BiLink className="link-icon" /></a>
                     </div>
                 </div>
                 <div className="each-projects-wrapper">
@@ -129,7 +129,7 @@ const Projects = () => {
                         <h4 className="project-info-title">Thinklex</h4>
                         <p className="project-info-text" >Mobile App.</p>
                         <BiPlus className="link-icon plus-icon" />
-                        <BiLink className="link-icon" />
+                        <a href="https://drive.google.com/file/d/1KRUZLoBuwCXuVtVi5oxua56ho2KLxck0/view?usp=sharing" target="_blank" rel="noopener noreferrer"><BiLink className="link-icon" /></a>
                     </div>
                 </div>
             </div>
