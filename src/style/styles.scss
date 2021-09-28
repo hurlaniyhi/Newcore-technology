@@ -360,6 +360,7 @@ p{
     left: 0;
     background-color: rgba(0,0,0, .6);
     z-index: 6;
+    overflow: hidden;
 }
 .side-bar-container{
     display: none;
@@ -367,7 +368,7 @@ p{
     align-items: center;
     //justify-content: center;  //
     padding: 32% 2rem 5rem 2rem;  // 15rem 2rem 5rem 2rem
-    width: 46%;  // 25rem
+    width: 60%;  // 25rem
     height: 100vh;
     position: fixed;
     top: 50%;
