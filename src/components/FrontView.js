@@ -4,7 +4,7 @@ import '../style/styles.scss';
 import logo from '../assets/newcoreLogo.png'
 import sideBarImage from '../assets/side-bar-img.png'
 import illustrator1 from '../assets/illustrator1.png'
-import { FaRegPlayCircle } from 'react-icons/fa';
+import { FaRegPlayCircle, FaReact, FaGoogle, FaNodeJs, FaCogs, FaRss, FaCode } from 'react-icons/fa';
 
 const FrontView = () => {
 
@@ -104,6 +104,14 @@ const FrontView = () => {
                 <div className="interface-image-container">
                     <img src={illustrator1} className="illustrator1"/>
                 </div>
+            </div>
+            <div className="technology-icons">
+                <FaReact className="each-tech-icon" />
+                <FaGoogle className="each-tech-icon" />
+                <FaNodeJs className="each-tech-icon" />
+                <FaCogs className="each-tech-icon" />
+                <FaRss className="each-tech-icon" />
+                <FaCode className="each-tech-icon" />
             </div>
         </div>
     );

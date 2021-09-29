@@ -7,34 +7,6 @@ import '../style/reasons.scss';
 const Reasons = () => {
     const {state, toggleDropDown} = useContext(StateManager)
 
-    useEffect(()=>{
-        const callback = function(entries){
-            entries.forEach(entry =>{
-                if(entry.isIntersecting){
-                    if(entry.intersectionRatio >= 0){
-                        //document.querySelector(".reasons-texts").classList.add("move-from-bottom")
-                        //document.querySelector(".reasons-illustrator").classList.add("scale-from-down")
-                    }
-                }
-                else{
-                    //document.querySelector(".reasons-texts").classList.remove("move-from-bottom")
-                    //document.querySelector(".reasons-illustrator").classList.remove("scale-from-down")
-                }
-            })
-        }
-
-        let observer = new IntersectionObserver(callback)
-        const target = document.querySelectorAll(".reason-title")
-        console.log(target)
-        target.forEach(target=>{
-            observer.observe(target)
-        })
-
-        return () => {
-            observer = null;
-        };
-    })
-
     function handleDropDown(type){
         toggleDropDown(type)
     }
