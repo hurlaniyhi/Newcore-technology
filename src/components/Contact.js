@@ -107,9 +107,9 @@ const Contact = () => {
                         <label className="form-label">Message</label>
                         <textarea className="form-input form-text-area" value={emailData.mailContent} name="mailContent" onChange={handleData} required></textarea>
                     </div>
-                    <a className="form-btn" onClick={handleEmail}>
+                    <a className="form-btn">
                         {
-                            emailData.isRequest ?  <Dots /> :  <span className>Send Message</span>
+                            emailData.isRequest ?  <Dots /> :  <span onClick={handleEmail}>Send Message</span>
                         }
                     </a>
                 </div>
