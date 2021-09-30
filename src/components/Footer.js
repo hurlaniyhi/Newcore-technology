@@ -11,7 +11,7 @@ const Footer = () =>{
                     <img src={logo} className="footer-image" />
                     <p>31, Biada, Gaa akanbi, Ilorin, Kwara State, Nigeria.</p>
                     <p><strong>Email: </strong><span>newcoretechnologies@gmail.com</span></p>
-                    <p><strong>Phone: </strong><span>+234 708 7994 127</span></p>
+                    <p><strong>Phone: </strong><span>+234 708 7994 127, &nbsp;&nbsp; +234 806 4054 305</span></p>
                 </div>
                 <div className="each-footer-info useful-link">
                     <h3>Useful Links</h3>
@@ -55,11 +55,7 @@ const Footer = () =>{
                         </div>
                         <div className="footer-list">
                             <FaChevronRight className="footer-icon" />
-                            <a className="footer-list-text">Product Management</a>
-                        </div>
-                        <div className="footer-list">
-                            <FaChevronRight className="footer-icon" />
-                            <a className="footer-list-text">Graphic design</a>
+                            <a className="footer-list-text">Networking</a>
                         </div>
                     </div>
                 </div>

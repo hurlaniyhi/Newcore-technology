@@ -4,7 +4,7 @@ import '../style/skills.scss'
 
 const Skills = () => {
 
-    let [webDesign, electronics, branding, consultancy] = ["95%", "74%", "98%", "56%"]
+    let [webDesign, electronics, networking, consultancy] = ["95%", "74%", "90%", "65%"]
 
     useEffect(()=>{
         const callback = function(entries){
@@ -48,7 +48,7 @@ const Skills = () => {
                     Newcore Technologies, our team are confidence enough to handle your problems digitally, share it with us and consider it done!...
                 </p>
                 <div className="skills-levels-wrapper">
-                    <span className="skills-level-text">App design / Develompent &amp; Networking <i className="level-val">{webDesign}</i></span>
+                    <span className="skills-level-text">App design / Develompent <i className="level-val">{webDesign}</i></span>
                     <div className="level-bar-wrapper">
                         <div className="level-bar bar1" style={{width: webDesign}}></div>
                     </div>
@@ -60,9 +60,9 @@ const Skills = () => {
                     </div>
                 </div>
                 <div className="skills-levels-wrapper">
-                    <span className="skills-level-text">Branding / Digital Marketing <i className="level-val">{branding}</i></span>
+                    <span className="skills-level-text">Networking <i className="level-val">{networking}</i></span>
                     <div className="level-bar-wrapper">
-                        <div className="level-bar bar3" style={{width: branding}}></div>
+                        <div className="level-bar bar3" style={{width: networking}}></div>
                     </div>
                 </div>
                 <div className="skills-levels-wrapper level-on-view">

@@ -6,7 +6,7 @@ import member1 from "../assets/rhydhur6.png"
 import member2 from "../assets/moh2.png"
 import member3 from "../assets/moh1.png"
 import member4 from "../assets/newton2.png"
-import member5 from "../assets/image14.png"
+import member5 from "../assets/lakadir2.png"
 import '../style/team.scss'
 
 const Team = () => {
@@ -16,7 +16,7 @@ const Team = () => {
             <div className="service-title-wrapper" data-aos='zoom-in'>
                 <h2 id="" className="services-title">Our Team</h2>
                 <Underline />
-                <p className="service-description">Here are some of our core members</p>
+                <p className="service-description">Here are some of our members</p>
             </div>
             <div className="team-member-wrapper">
                 <div className="team-member" data-aos='fade-down-right'>
@@ -44,7 +44,7 @@ const Team = () => {
                         <div className="member-info-wrapper">
                             <div className="member-info-1">
                                 <BsFiles className="age-icon" />
-                                <p className="member-experience">3 Years of experience</p>
+                                <p className="member-experience">4 Years of experience</p>
                             </div>
                             <div className="member-info-2">
                                 <FaCertificate className="age-icon" />

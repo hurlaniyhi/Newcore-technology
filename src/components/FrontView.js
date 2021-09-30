@@ -108,7 +108,7 @@ const FrontView = () => {
                     <h1 className="intro-text_1">Addressing your problem digitally...</h1>
                     <h2 className="intro-text_2">We are team of talented engineers providing solutions to your problems</h2>
                     <div className="getStarted-container">
-                        <a className="getStarted-button">Get started</a>
+                        <a href="#contacts" className="getStarted-button">Get started</a>
                         <FaRegPlayCircle className="play-icon" />
                         <p className="play-text">Watch Video</p>
                     </div>
