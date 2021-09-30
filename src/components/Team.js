@@ -6,6 +6,7 @@ import member1 from "../assets/rhydhur6.png"
 import member2 from "../assets/moh2.png"
 import member3 from "../assets/moh1.png"
 import member4 from "../assets/newton2.png"
+import member5 from "../assets/image14.png"
 import '../style/team.scss'
 
 const Team = () => {
@@ -89,6 +90,24 @@ const Team = () => {
                     </div>
                     <div className="team-member-overlay"></div>
                     <img src={member3} className="team-member-image" />
+                </div>
+                <div className="team-member hide-member" data-aos='fade-up'>
+                    <div className="team-member-details">
+                        <h4 className="member-name">Lakadir AbdulAzeez</h4>
+                        <p className="member-role">Technology Expert</p>
+                        <div className="member-info-wrapper">
+                            <div className="member-info-1">
+                                <BsFiles className="age-icon" />
+                                <p className="member-experience">5 Years of experience</p>
+                            </div>
+                            <div className="member-info-2">
+                                <FaCertificate className="age-icon" />
+                                <p className="member-experience">B.ENG., GMNSE</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="team-member-overlay"></div>
+                    <img src={member5} className="team-member-image" />
                 </div>
             </div>
         </div>

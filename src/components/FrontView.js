@@ -42,7 +42,8 @@ const FrontView = () => {
         //console.log({state})
     }
 
-    function removeSideBar(){
+    function removeSideBar(){ 
+        document.body.style.overflow = "auto"
         document.querySelector(".navigation__checkbox").checked = false
     }
     
@@ -57,14 +58,25 @@ const FrontView = () => {
           }
         }
         else{
-          document.querySelector(".navigation__checkbox").checked = false
-          document.querySelector(".main-container").className = "main-container"
+            document.body.style.overflow = "auto"
+            document.querySelector(".navigation__checkbox").checked = false
+            document.querySelector(".main-container").className = "main-container"
         }
       }
 
+     function handleBodyStyle(e){
+         if(e.target.checked){
+             document.body.style.overflow = "hidden";
+             console.log("checked")
+         }
+         else{
+             document.body.style.overflow = "auto"
+         }
+     }
+
     return (
         <div className="main-container">
-            <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle" onChange={handleBodyStyle} />
             <label for="navi-toggle" onClick={() => handleNavLink("checkbox")} class="navigation__button">
                 <span class="navigation__icon">&nbsp;</span>
             </label>

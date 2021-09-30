@@ -24,7 +24,7 @@ const Home = () => {
 
 
   return (
-    <div >
+    <div>
       <FrontView />
       <About />
       <Reasons />
