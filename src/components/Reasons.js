@@ -1,7 +1,7 @@
 import React, {useEffect, useContext} from 'react';
 import StateManager from '../context/stateManager'
 import { FiChevronUp, FiChevronDown} from "react-icons/fi";
-import illustrator from '../assets/illustrator1.png'
+import illustrator from '../assets/ill2.png'
 import '../style/reasons.scss';
 
 const Reasons = () => {
@@ -16,9 +16,12 @@ const Reasons = () => {
             <div className="reasons-texts" data-aos='fade-up' data-aos-once={true}>
                 <h3 className="reason-title">Why Choose <strong>Us</strong></h3>
                 <p className="reason-description">
-                    We are a genuinely customer-focused organization we provide 
+                    {/* We are a genuinely customer-focused organization we provide 
                     highly-customized software and solutions which complements 
-                    generic products that are superior to all others in all market.
+                    generic products that are superior to all others in all market. */}
+                    We are the bridge that brings together people, technology and business.
+                    With NewCore Technologies, you will find cost-efficient support, guidance 
+                    and the inspiration you need to provide your business with a competitive advantages.
                 </p>
                 <div className="each-reason-container">
                 {state.one != "each-reason-text" ? 

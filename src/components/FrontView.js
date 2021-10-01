@@ -105,7 +105,11 @@ const FrontView = () => {
             <div id="home" className="interface-container">
                 <p className="toggle-nav-bkg"></p>
                 <div className="interface-text-container">
-                    <h1 className="intro-text_1">Addressing your problem digitally...</h1>
+                    <h1 className="intro-text_1">
+                        {/* Addressing your problem digitally... */}
+                        {/* we are the solution and not the pollution */}
+                        Digital delivery is the way the future works...
+                    </h1>
                     <h2 className="intro-text_2">We are team of talented engineers providing solutions to your problems</h2>
                     <div className="getStarted-container">
                         <a href="#contacts" className="getStarted-button">Get started</a>

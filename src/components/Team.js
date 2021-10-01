@@ -73,7 +73,7 @@ const Team = () => {
                     <div className="team-member-overlay"></div>
                     <img src={member2} className="team-member-image" />
                 </div>
-                <div className="team-member hide-member" data-aos='fade-up'>
+                <div className="team-member hide-member" data-aos='fade-up-right'>
                     <div className="team-member-details">
                         <h4 className="member-name">Ahmed Olaoye</h4>
                         <p className="member-role">Chairman</p>
@@ -91,7 +91,7 @@ const Team = () => {
                     <div className="team-member-overlay"></div>
                     <img src={member3} className="team-member-image" />
                 </div>
-                <div className="team-member hide-member" data-aos='fade-up'>
+                <div className="team-member hide-member" data-aos='fade-up-left'>
                     <div className="team-member-details">
                         <h4 className="member-name">Lakadir AbdulAzeez</h4>
                         <p className="member-role">Technology Expert</p>
