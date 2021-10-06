@@ -3,7 +3,7 @@ import StateManager from '../context/stateManager'
 import '../style/styles.scss';
 import logo from '../assets/newcoreLogo.png'
 import sideBarImage from '../assets/side-bar-img.png'
-import illustrator1 from '../assets/illustrator1.png'
+import illustrator1 from '../assets/ills2.png'
 import { FaRegPlayCircle, FaReact, FaGoogle, FaNodeJs, FaCogs, FaRss, FaCode } from 'react-icons/fa';
 
 const FrontView = () => {

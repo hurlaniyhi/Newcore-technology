@@ -1,5 +1,5 @@
 import React,{useEffect} from 'react';
-import skillsIllustrator from '../assets/skills.png'
+import skillsIllustrator from '../assets/ills3.png'
 import '../style/skills.scss'
 
 const Skills = () => {
