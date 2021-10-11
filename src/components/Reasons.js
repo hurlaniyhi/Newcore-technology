@@ -1,7 +1,7 @@
 import React, {useEffect, useContext} from 'react';
 import StateManager from '../context/stateManager'
 import { FiChevronUp, FiChevronDown} from "react-icons/fi";
-import illustrator from '../assets/ills1.png'
+import illustrator from '../assets/illustrator1.png'
 import '../style/reasons.scss';
 
 const Reasons = () => {
