@@ -3,7 +3,7 @@ import Underline from "./reusable/Underline"
 import { BiLink, BiPlus } from "react-icons/bi";
 import portfolio2 from '../assets/vsprout.png'
 import portfolio3 from '../assets/managerApp.png'
-import portfolio4 from '../assets/portfolio-4.jpg'
+import portfolio4 from '../assets/countryInfoImg.png'
 import portfolio5 from '../assets/natour.png'
 import portfolio6 from '../assets/portfolio-6.jpg'
 import portfolio7 from '../assets/portfolio-7.jpg'
@@ -45,10 +45,10 @@ const Projects = () => {
                 <div className="each-projects-wrapper">
                     <img src={portfolio4} className="project-image" />
                     <div className="project-info">
-                        <h4 className="project-info-title">Pay Now</h4>
+                        <h4 className="project-info-title">Go Country</h4>
                         <p className="project-info-text" >Web App.</p>
                         <BiPlus className="link-icon plus-icon" />
-                        <BiLink className="link-icon" />
+                        <a href="https://allcountriesdetails.netlify.app/" target="_blank" rel="noopener noreferrer"><BiLink className="link-icon" /></a>
                     </div>
                 </div>
                 <div className="each-projects-wrapper">
@@ -111,7 +111,7 @@ const Projects = () => {
                         <h4 className="project-info-title">Rhymes</h4>
                         <p className="project-info-text" >Mobile App.</p>
                         <BiPlus className="link-icon plus-icon" />
-                        <BiLink className="link-icon" />
+                        <a href="https://drive.google.com/file/d/1pRg9vZrelncG5n_0UzjVESI2TWzllaeH/view?usp=sharing" target="_blank" rel="noopener noreferrer"><BiLink className="link-icon" /></a>
                     </div>
                 </div>
                 <div className="each-projects-wrapper">
