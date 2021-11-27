@@ -6,7 +6,7 @@ import portfolio3 from '../assets/managerApp.png'
 import portfolio4 from '../assets/countryInfoImg.png'
 import portfolio5 from '../assets/natour.png'
 import portfolio6 from '../assets/portfolio-6.jpg'
-import portfolio7 from '../assets/portfolio-7.jpg'
+import portfolio7 from '../assets/tradeAround.png'
 import portfolio8 from '../assets/portfolio-8.jpg'
 import portfolio9 from '../assets/cbt.png'
 import portfolio10 from '../assets/portfolio-5.jpg'
@@ -48,7 +48,7 @@ const Projects = () => {
                         <h4 className="project-info-title">Go Country</h4>
                         <p className="project-info-text" >Web App.</p>
                         <BiPlus className="link-icon plus-icon" />
-                        <a href="https://allcountriesdetails.netlify.app/" target="_blank" rel="noopener noreferrer"><BiLink className="link-icon" /></a>
+                        <a href="https://countrydet.netlify.app/" target="_blank" rel="noopener noreferrer"><BiLink className="link-icon" /></a>
                     </div>
                 </div>
                 <div className="each-projects-wrapper">
@@ -72,10 +72,10 @@ const Projects = () => {
                 <div className="each-projects-wrapper">
                     <img src={portfolio7} className="project-image" />
                     <div className="project-info">
-                        <h4 className="project-info-title">Be Beautiful</h4>
+                        <h4 className="project-info-title">TradeAround</h4>
                         <p className="project-info-text" >Web App.</p>
                         <BiPlus className="link-icon plus-icon" />
-                        <BiLink className="link-icon" />
+                        <a href="https://buymore.netlify.app/" target="_blank" rel="noopener noreferrer"><BiLink className="link-icon" /></a>
                     </div>
                 </div>
                 <div className="each-projects-wrapper">
